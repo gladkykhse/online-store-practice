@@ -1,1 +1,1 @@
-# online-store-practice
+# Online Store (practice node.js)
