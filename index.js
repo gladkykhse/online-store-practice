@@ -1,5 +1,6 @@
 import express from "express"
 import path from "path"
+import product from "./database/delete_product.js"
 
 
 const app = express()

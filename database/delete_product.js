@@ -13,6 +13,10 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    type: {
+        type: String,
+        required: true
+    },
     description: {
         type: String,
         required: true
@@ -26,15 +30,7 @@ const productSchema = new mongoose.Schema({
 
 const Products = mongoose.model("products", productSchema)
 
+const res = await Products.remove({ type: "phone" });
+res.deletedCount; // Number of documents removed
 
-import product from './static/product.json'
-console.log(product["products"][0])
-
-for (let i = 0; i < product["products"].length; i++) {
-    Products.create(product["products"][i])
-        .then((data) => console.log(data))
-        .catch((err) => console.log(err))
-}
-
-
-export default product
+export default res.deletedCount

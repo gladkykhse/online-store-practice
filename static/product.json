@@ -2,18 +2,39 @@
   "products": [
     {
       "name": "Iphone 12 Pro Max 128GB",
+      "type": "phone",
       "description": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
       "price": "1099"
     },
     {
       "name": "Iphone 12 Pro Max 256GB",
+      "type": "phone",
       "description": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
       "price": "1199"
     },
     {
       "name": "Iphone 12 Pro Max 512GB",
+      "type": "phone",
       "description": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
       "price": "1399"
+    },
+    {
+      "name": "Iphone 12 Pro 128GB",
+      "type": "phone",
+      "description": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
+      "price": "999"
+    },
+    {
+      "name": "Iphone 12 Pro 256GB",
+      "type": "phone",
+      "description": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
+      "price": "1099"
+    },
+    {
+      "name": "Iphone 12 Pro 512GB",
+      "type": "phone",
+      "description": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
+      "price": "1299"
     }
   ]
 }
