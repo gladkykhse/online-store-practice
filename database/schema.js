@@ -30,7 +30,4 @@ const productSchema = new mongoose.Schema({
 
 const Products = mongoose.model("products", productSchema)
 
-const res = await Products.remove({ type: "phone" });
-res.deletedCount; // Number of documents removed
-
-export default res.deletedCount
+export default Products

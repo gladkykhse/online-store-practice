@@ -1,15 +1,12 @@
 import express from "express"
 import path from "path"
-import product from "./database/delete_product.js"
-
+//import {createProduct, getProducts, deleteProduct} from "./database/database.js"
 
 const app = express()
 const PORT = process.env.PORT ?? 3000
 const __dirname = path.resolve()
 
-
 app.use(express.static(path.resolve(__dirname,"static")))
-
 
 app.set("view engine","ejs")
 
