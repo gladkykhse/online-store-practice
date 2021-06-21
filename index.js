@@ -14,7 +14,19 @@ app.set("view engine","ejs")
 
 
 app.get("/", (req, res) => {
-    res.render("index",{title:"Main page"})
+    res.render("index",{title:"Online Store", active: "index"})
+})
+
+app.get("/catalog", (req, res) => {
+    res.render("catalog",{title:"Catalog", active: "catalog"})
+})
+
+app.get("/contacts", (req, res) => {
+    res.render("contacts",{title:"Contacts", active: "contacts"})
+})
+
+app.get("/account", (req, res) => {
+    res.render("account",{title:"Account", active: "account"})
 })
 
 app.listen(PORT, () => {
