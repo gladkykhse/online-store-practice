@@ -1,5 +1,6 @@
 import express from "express"
 import path from "path"
+import products from './static/product.json'
 //import {createProduct, getProducts, deleteProduct} from "./database/database.js"
 
 const app = express()
@@ -25,6 +26,10 @@ app.get("/contacts", (req, res) => {
 
 app.get("/account", (req, res) => {
     res.render("account",{title:"Account", active: "account"})
+})
+
+app.get("/data", (req, res) => {
+    res.send(products)
 })
 
 app.listen(PORT, () => {
