@@ -11,7 +11,12 @@ export function createProduct(data) {
 export function getProducts() {
     return Products.find()
         .then((data) => {
-            return data
+            let resData = { products: [] }
+            for (let i = 0; i < data.length; i++)
+            {
+                resData["products"].push(data[i])
+            }
+            return resData
         })
         .catch((err) => { return err })
 }
