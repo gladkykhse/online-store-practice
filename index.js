@@ -1,7 +1,7 @@
 import express from "express"
 import path from "path"
 import products from './static/product.json'
-import {createProduct, getProducts, deleteProduct} from "./database/database.js"
+import {createProduct, getProducts, deleteProduct, dockNumber} from "./database/database.js"
 
 const app = express()
 const PORT = process.env.PORT ?? 3000
@@ -12,6 +12,9 @@ app.use(express.static(path.resolve(__dirname,"static")))
 app.set("view engine","ejs")
 
 // await deleteProduct()
+
+let id = await dockNumber()
+createProduct(products, id)
 
 app.get("/", (req, res) => {
     res.render("index",{title:"Online Store", active: "index"})

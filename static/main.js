@@ -10,8 +10,8 @@ getResponse("http://localhost:3000/data").then((data) => {
         let smallName = ""
         let smallDesc = ""
 
-        if (data["products"][i]["name"].length > 20) {
-            smallName = data["products"][i]["name"].slice(0,20) + "..."
+        if (data["products"][i]["name"].length > 18) {
+            smallName = data["products"][i]["name"].slice(0,18) + "..."
         } else {
             smallName = data["products"][i]["name"]
         }
@@ -24,7 +24,7 @@ getResponse("http://localhost:3000/data").then((data) => {
 
 
 
-        document.getElementById("allProds").innerHTML += `<div id="prod"><div id="prodName">${smallName}</div><br><div id="prodDesc">${smallDesc}</div></div>`
+        document.getElementById("allProds").innerHTML += `<div id="prod"><div id="prodName">${smallName}</div><img src="images/test.png" id="prodImg" alt="productImage"><div id="prodDesc">${smallDesc}</div></div>`
     }
 })
 

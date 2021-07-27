@@ -1,8 +1,10 @@
 import Products from "./schema.js"
 
-export function createProduct(data) {
+export function createProduct(data, id) {
     for (let i = 0; i < data["products"].length; i++) {
-        Products.create(data["products"][i])
+        let addedID = data["products"][i]
+        addedID["id"] = id + i
+        Products.create(addedID)
             .then((data) => { return data })
             .catch((err) => { return err })
     }
@@ -24,4 +26,12 @@ export function getProducts() {
 export async function deleteProduct(filter) {
     const res = await Products.remove(filter)
     return res.deletedCount // Number of documents removed
+}
+
+export async function dockNumber() {
+    let returnNumber
+    await Products.countDocuments().then((int) => {
+        returnNumber = int
+    })
+    return returnNumber
 }

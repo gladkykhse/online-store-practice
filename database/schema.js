@@ -24,6 +24,10 @@ const productSchema = new mongoose.Schema({
     price: {
         type: Number,
         required: true
+    },
+    id: {
+        type: Number,
+        required: true
     }
 })
 
